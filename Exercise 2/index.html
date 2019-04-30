@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Deni Exercise 2</title>
+    <link rel="stylesheet" type="text/css" href="src/style.css">
+</head>
+<body>
+    <table>
+        <tr>
+            <td colspan="4">
+                    <input type="text" disabled id="output" value="0">
+            </td> 
+        </tr>
+        <tr>
+            <td><button class="Button" onclick="Button('1')">1</button></td>
+            <td><button class="Button" onclick="Button('2')">2</button></td>
+            <td><button class="Button" onclick="Button('3')">3</button></td>    
+        </tr>
+        <tr>
+            <td><button class="Button" onclick="Button('4')">4</button></td>
+            <td><button class="Button" onclick="Button('5')">5</button></td>
+            <td><button class="Button" onclick="Button('6')">6</button></td>    
+        </tr>
+        <tr>
+            <td><button class="Button" onclick="Button('7')">7</button></td>
+            <td><button class="Button" onclick="Button('8')">8</button></td>
+            <td><button class="Button" onclick="Button('9')">9</button></td>    
+        </tr>
+        <tr>
+            <td><button class="Button" onclick="Koma('2')">.</button></td>
+            <td><button class="Button" onclick="Button('0')">0</button></td>
+            <td><button class="Button Operator" onclick="Button_Operator(1)">*</button></td>    
+        </tr>
+        <tr>
+            <td><button class="Button Operator" onclick="Button_Operator(2)">/</button></td>
+            <td><button class="Button Operator" onclick="Button_Operator(3)">-</button></td>
+            <td><button class="Button Operator" onclick="Button_Operator(4)">+</button></td>    
+        </tr>
+        <tr>
+            <td colspan="4"><button class="Button Hasil" style="width:100%" onclick="Hitung()">=</button></td>
+        </tr>
+        <tr>
+            <td colspan="4"><button class="Button Clear" style="width:100%" onclick="Clear()">C</button></td>
+        </tr>        
+    </table>
+    <script type="text/javascript" src="js/operasi.js"></script>
+
+</body>
+</html>
